@@ -9,8 +9,8 @@ class Application
     if req.path.match(/items/)
       @@items.each do |item|
         resp.write "#{item}  #{price}\n"
-      end 
-    end 
+      end
+    end
 
     if req.path=="/items"
       resp.write "You requested this item."
