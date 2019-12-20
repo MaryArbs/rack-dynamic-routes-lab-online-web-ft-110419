@@ -8,7 +8,7 @@ class Application
 
     if req.path.match(/items/)
       @@items.each do |item|
-        resp.write "#{item}\n"
+        resp.write "#{item}  #{price}\n"
       end
 
     if req.path=="/items"
